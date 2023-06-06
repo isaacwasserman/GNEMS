@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/maxflow-v3.04.src"
+		},
+		{
+			"path": "../Thesis/Second Semester/competing_methods/differentiable-feature-clustering"
+		}
+	],
+	"settings": {}
+}
