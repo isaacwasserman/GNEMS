@@ -67,7 +67,7 @@ def smart_jaccard(gt_, seg_):
             overlaps[i] = torch.sum((gt == gt_segment) & (seg == seg_segment))
         segment_mapping[int(seg_segment)] = gt_segments[torch.argmax(overlaps)]
     jaccard = 0
-    label_aligned_seg = torch.zeros(seg.shape, dtype=torch.int)
+    label_aligned_seg = torch.zeros(seg.shape, dtype=torch.int).to(seg.device)
     for seg_segment in seg_segments:
         label_aligned_seg[seg == seg_segment] = segment_mapping[int(seg_segment)]
     for gt_segment in gt_segments:
