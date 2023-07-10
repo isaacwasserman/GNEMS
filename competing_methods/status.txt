@@ -1,0 +1,4 @@
+BSDS Test:
+DoubleDip: 80%
+PiCIE: 0%
+SegSort: 100%
