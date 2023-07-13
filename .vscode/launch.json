@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Jupyter Notebook",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": false,
+      "python": "${command:python.interpreterPath}",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "debugOptions": [
+        "RedirectOutput",
+        "ShowReturnValue"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+      }
+    }
+  ]
+}
